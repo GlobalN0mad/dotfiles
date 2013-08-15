@@ -162,7 +162,18 @@ shopt -s histappend
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+# You can change the 0;34 part to change the color:
+# Color   Code
+# Black   0;30
+# Blue    0;34
+# Green   0;32
+# Cyan    0;36
+# Red     0;31
+# Purple  0;35
+# Brown   0;33
+# (replace 0 with 1 to get light color)
+
+PS1="\[\033[0;36m\][\u@\h:\w]$\[\033[0m\]"
 
 ## -----------------------
 ## -- 2) Set up aliases --
